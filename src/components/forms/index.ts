@@ -1,4 +1,5 @@
 export * from './account-management/LoginProviderManagerForm';
+export * from './change-password/ChangePasswordForm';
 export * from './email-verification/EmailVerificationForm';
 export * from './forgot-password/ForgotPasswordForm';
 export * from './password-login/ConnectedPasswordLoginForm';

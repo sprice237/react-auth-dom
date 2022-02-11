@@ -4,6 +4,7 @@ import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import { FirebaseUser } from '@sprice237/react-auth';
 import { LinkPasswordAuthProviderModal } from './LinkPasswordAuthProviderModal';
+import { ChangePasswordModal } from './ChangePasswordModal';
 
 export type LoginProviderManagerPasswordRowProps = {
   passwordProvider: FirebaseUser['providerData'][0] | undefined;
@@ -18,6 +19,7 @@ export const LoginProviderManagerPasswordRow: VFC<LoginProviderManagerPasswordRo
 }) => {
   const [isLinkPasswordAuthProviderModalVisible, setIsLinkPasswordAuthProviderModalVisible] =
     useState(false);
+  const [isChangePasswordModalVisible, setIsChangePasswordModalVisible] = useState(false);
 
   return (
     <>
@@ -27,16 +29,30 @@ export const LoginProviderManagerPasswordRow: VFC<LoginProviderManagerPasswordRo
           onCancel={() => setIsLinkPasswordAuthProviderModalVisible(false)}
         />
       )}
+      {isChangePasswordModalVisible && (
+        <ChangePasswordModal
+          onComplete={() => setIsChangePasswordModalVisible(false)}
+          onCancel={() => setIsChangePasswordModalVisible(false)}
+        />
+      )}
       <TableRow>
         <TableCell>Password</TableCell>
         <TableCell>
-          {passwordProvider && nonPasswordProvider && (
-            <Button onClick={onRemove} variant="contained" color="primary">
-              Remove password
-            </Button>
-          )}
-          {passwordProvider && !nonPasswordProvider && (
-            <p>Cannot remove without an alternate login method</p>
+          {passwordProvider && (
+            <>
+              <Button
+                onClick={() => setIsChangePasswordModalVisible(true)}
+                variant="contained"
+                color="primary"
+              >
+                Change password
+              </Button>
+              {nonPasswordProvider && (
+                <Button onClick={onRemove} variant="contained" color="primary">
+                  Remove password
+                </Button>
+              )}
+            </>
           )}
           {!passwordProvider && (
             <Button

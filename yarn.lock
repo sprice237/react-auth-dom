@@ -773,10 +773,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@sprice237/react-auth@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@sprice237/react-auth/-/react-auth-0.3.0.tgz#f251dcb00bacc4a19ac084a317a43546decf1527"
-  integrity sha512-8UjCFBRyx6WDDYZrBaGITY458Qn+TDK/pSKYJPlT1897Hv3bkHbdKqKtw0P4LIXz8sjhvEtTKHh6Ydgz5uTMbg==
+"@sprice237/react-auth@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@sprice237/react-auth/-/react-auth-0.4.0.tgz#21d8acec95a17f4799eff6a3ccb4ac3a9b3b3e61"
+  integrity sha512-KItEwB09KuIh5fLzsy+9MS+VjPHx5dhHwGP+gDphWarOlMbGqOqtikSwLvIADlpcIJu8UIN/tMeAc2ChjpAQzQ==
   dependencies:
     "@firebase/app" "0.7.9"
     "@firebase/auth" "0.19.3"
