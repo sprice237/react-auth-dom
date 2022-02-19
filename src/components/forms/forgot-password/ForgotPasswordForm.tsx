@@ -1,6 +1,5 @@
 import { useFormik } from 'formik';
-import { memo, VFC } from 'react';
-import { Link } from 'react-router-dom';
+import { memo, ReactElement, VFC } from 'react';
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
@@ -14,10 +13,10 @@ const initialValues: ForgotPasswordFormData = {
 };
 
 export type ForgotPasswordFormProps = {
-  loginRoutePath: string;
+  backToLoginElement?: ReactElement;
 };
 
-export const ForgotPasswordForm: VFC<ForgotPasswordFormProps> = memo(({ loginRoutePath }) => {
+export const ForgotPasswordForm: VFC<ForgotPasswordFormProps> = memo(({ backToLoginElement }) => {
   const { error, inProgress, isComplete, submit } = useForgotPasswordForm();
 
   const formik = useFormik<ForgotPasswordFormData>({
@@ -51,9 +50,7 @@ export const ForgotPasswordForm: VFC<ForgotPasswordFormProps> = memo(({ loginRou
             <Button type="submit" variant="contained" color="primary">
               Submit
             </Button>
-            <Button component={Link} to={loginRoutePath} color="primary">
-              Back to login
-            </Button>
+            {backToLoginElement}
           </ButtonContainer>
         </Box>
       </form>

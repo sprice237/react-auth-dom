@@ -3,17 +3,19 @@ import { useApplyActionCode } from '@sprice237/react-auth';
 import { useFirebaseActionParams } from './hooks';
 
 export type AuthActionHandlerProps = {
+  search: string;
   onResetPasswordAction?: (oobCode: string) => void;
   onVerifyEmailAction?: () => void;
   onNoAction: () => void;
 };
 
 export const AuthActionHandler: VFC<AuthActionHandlerProps> = ({
+  search,
   onResetPasswordAction,
   onVerifyEmailAction,
   onNoAction,
 }) => {
-  const firebaseActionParams = useFirebaseActionParams();
+  const firebaseActionParams = useFirebaseActionParams(search);
   const applyActionCode = useApplyActionCode();
 
   const onVerifyEmail = async (oobCode: string): Promise<void> => {

@@ -1,6 +1,5 @@
 import { useFormik } from 'formik';
-import { memo, VFC } from 'react';
-import { Link } from 'react-router-dom';
+import { memo, ReactElement, VFC } from 'react';
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
@@ -15,12 +14,12 @@ const initialValues: PasswordResetFormData = {
 };
 
 export type PasswordResetFormProps = {
-  loginRoutePath: string;
+  backToLoginElement?: ReactElement;
   oobCode: string;
 };
 
 export const PasswordResetForm: VFC<PasswordResetFormProps> = memo(
-  ({ loginRoutePath, oobCode }) => {
+  ({ backToLoginElement, oobCode }) => {
     const { error, inProgress, submit } = usePasswordResetForm(oobCode);
 
     const formik = useFormik<PasswordResetFormData>({
@@ -61,9 +60,7 @@ export const PasswordResetForm: VFC<PasswordResetFormProps> = memo(
               <Button type="submit" variant="contained" color="primary">
                 Submit
               </Button>
-              <Button component={Link} to={loginRoutePath} color="primary">
-                Back to login
-              </Button>
+              {backToLoginElement}
             </ButtonContainer>
           </Box>
         </form>

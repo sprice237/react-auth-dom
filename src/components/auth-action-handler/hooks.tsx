@@ -1,5 +1,3 @@
-import { useLocation } from 'react-router-dom';
-
 type FirebaseActionParams = {
   mode: string;
   oobCode: string;
@@ -7,8 +5,7 @@ type FirebaseActionParams = {
   lang: string;
 };
 
-export const useFirebaseActionParams = (): FirebaseActionParams | null => {
-  const { search } = useLocation();
+export const useFirebaseActionParams = (search: string): FirebaseActionParams | null => {
   const searchObj = new URLSearchParams(search);
 
   const mode = searchObj.get('mode') as 'resetPassword' | 'recoverEmail' | 'verifyEmail' | null;

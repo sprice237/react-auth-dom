@@ -49,7 +49,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["formik", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:2.2.9"],
             ["prettier", "npm:2.3.2"],
             ["react-is", "npm:17.0.2"],
-            ["react-router-dom", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:6.2.1"],
             ["rimraf", "npm:3.0.2"],
             ["styled-components", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:5.3.3"],
             ["ts-node", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:10.2.0"],
@@ -199,14 +198,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.17.0-447a597408-1864ac3c6a.zip/node_modules/@babel/runtime/",
           "packageDependencies": [
             ["@babel/runtime", "npm:7.17.0"],
-            ["regenerator-runtime", "npm:0.13.9"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:7.17.2", {
-          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.17.2-ec60bc114d-a48702d271.zip/node_modules/@babel/runtime/",
-          "packageDependencies": [
-            ["@babel/runtime", "npm:7.17.2"],
             ["regenerator-runtime", "npm:0.13.9"]
           ],
           "linkType": "HARD",
@@ -1877,7 +1868,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["formik", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:2.2.9"],
             ["prettier", "npm:2.3.2"],
             ["react-is", "npm:17.0.2"],
-            ["react-router-dom", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:6.2.1"],
             ["rimraf", "npm:3.0.2"],
             ["styled-components", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:5.3.3"],
             ["ts-node", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:10.2.0"],
@@ -3252,16 +3242,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["history", [
-        ["npm:5.2.0", {
-          "packageLocation": "./.yarn/cache/history-npm-5.2.0-de9a69e37c-2c6a05aa86.zip/node_modules/history/",
-          "packageDependencies": [
-            ["history", "npm:5.2.0"],
-            ["@babel/runtime", "npm:7.17.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["hoist-non-react-statics", [
         ["npm:3.3.2", {
           "packageLocation": "./.yarn/cache/hoist-non-react-statics-npm-3.3.2-e7b709e6c1-b153827042.zip/node_modules/hoist-non-react-statics/",
@@ -3884,57 +3864,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/react-is-npm-17.0.2-091bbb8db6-9d6d111d89.zip/node_modules/react-is/",
           "packageDependencies": [
             ["react-is", "npm:17.0.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["react-router", [
-        ["npm:6.2.1", {
-          "packageLocation": "./.yarn/cache/react-router-npm-6.2.1-b3ded752fc-081a89237a.zip/node_modules/react-router/",
-          "packageDependencies": [
-            ["react-router", "npm:6.2.1"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:3c13f3b4c8944a192852a75a2dbc8159f8efabd8ece5fc3239a1d4fa88aecb4a64f69a7123d02ba16ab5774a2b35e47d9fe7749d9c09c650536f4a203df824ae#npm:6.2.1", {
-          "packageLocation": "./.yarn/__virtual__/react-router-virtual-acc433a364/0/cache/react-router-npm-6.2.1-b3ded752fc-081a89237a.zip/node_modules/react-router/",
-          "packageDependencies": [
-            ["react-router", "virtual:3c13f3b4c8944a192852a75a2dbc8159f8efabd8ece5fc3239a1d4fa88aecb4a64f69a7123d02ba16ab5774a2b35e47d9fe7749d9c09c650536f4a203df824ae#npm:6.2.1"],
-            ["@types/react", "npm:17.0.19"],
-            ["history", "npm:5.2.0"],
-            ["react", null]
-          ],
-          "packagePeers": [
-            "@types/react",
-            "react"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["react-router-dom", [
-        ["npm:6.2.1", {
-          "packageLocation": "./.yarn/cache/react-router-dom-npm-6.2.1-e4eb493736-fa0edc69fd.zip/node_modules/react-router-dom/",
-          "packageDependencies": [
-            ["react-router-dom", "npm:6.2.1"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:6.2.1", {
-          "packageLocation": "./.yarn/__virtual__/react-router-dom-virtual-3c13f3b4c8/0/cache/react-router-dom-npm-6.2.1-e4eb493736-fa0edc69fd.zip/node_modules/react-router-dom/",
-          "packageDependencies": [
-            ["react-router-dom", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:6.2.1"],
-            ["@types/react", "npm:17.0.19"],
-            ["@types/react-dom", "npm:17.0.9"],
-            ["history", "npm:5.2.0"],
-            ["react", null],
-            ["react-dom", null],
-            ["react-router", "virtual:3c13f3b4c8944a192852a75a2dbc8159f8efabd8ece5fc3239a1d4fa88aecb4a64f69a7123d02ba16ab5774a2b35e47d9fe7749d9c09c650536f4a203df824ae#npm:6.2.1"]
-          ],
-          "packagePeers": [
-            "@types/react-dom",
-            "@types/react",
-            "react-dom",
-            "react"
           ],
           "linkType": "HARD",
         }]
