@@ -1,3 +1,5 @@
+import { useMemo } from 'react';
+
 export type FirebaseActionParams = {
   mode: string;
   oobCode: string;
@@ -5,23 +7,24 @@ export type FirebaseActionParams = {
   lang: string;
 };
 
-export const useFirebaseActionParams = (search: string): FirebaseActionParams | null => {
-  const searchObj = new URLSearchParams(search);
+export const useFirebaseActionParams = (search: string): FirebaseActionParams | null =>
+  useMemo(() => {
+    const searchObj = new URLSearchParams(search);
 
-  const mode = searchObj.get('mode') as 'resetPassword' | 'recoverEmail' | 'verifyEmail' | null;
-  const oobCode = searchObj.get('oobCode');
-  const apiKey = searchObj.get('apiKey');
-  const lang = searchObj.get('lang');
+    const mode = searchObj.get('mode') as 'resetPassword' | 'recoverEmail' | 'verifyEmail' | null;
+    const oobCode = searchObj.get('oobCode');
+    const apiKey = searchObj.get('apiKey');
+    const lang = searchObj.get('lang');
 
-  if (
-    !mode ||
-    !['resetPassword', 'recoverEmail', 'verifyEmail'].includes(mode) ||
-    !oobCode ||
-    !apiKey ||
-    !lang
-  ) {
-    return null;
-  }
+    if (
+      !mode ||
+      !['resetPassword', 'recoverEmail', 'verifyEmail'].includes(mode) ||
+      !oobCode ||
+      !apiKey ||
+      !lang
+    ) {
+      return null;
+    }
 
-  return { mode, oobCode, apiKey, lang };
-};
+    return { mode, oobCode, apiKey, lang };
+  }, [search]);
