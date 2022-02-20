@@ -1,4 +1,4 @@
-type FirebaseActionParams = {
+export type FirebaseActionParams = {
   mode: string;
   oobCode: string;
   apiKey: string;
