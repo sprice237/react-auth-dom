@@ -1112,7 +1112,7 @@ __metadata:
   resolution: "@sprice237/react-auth-dom@workspace:."
   dependencies:
     "@mui/material": 5.0.0
-    "@sprice237/react-auth": 0.4.0
+    "@sprice237/react-auth": 0.4.3
     "@types/node": 16.7.1
     "@types/react": 17.0.19
     "@types/react-dom": 17.0.9
@@ -1138,9 +1138,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@sprice237/react-auth@npm:0.4.0":
-  version: 0.4.0
-  resolution: "@sprice237/react-auth@npm:0.4.0"
+"@sprice237/react-auth@npm:0.4.3":
+  version: 0.4.3
+  resolution: "@sprice237/react-auth@npm:0.4.3"
   dependencies:
     "@firebase/app": 0.7.9
     "@firebase/auth": 0.19.3
@@ -1149,7 +1149,7 @@ __metadata:
     tslib: 2.3.1
   peerDependencies:
     react: ^17
-  checksum: b7bd6f6425d624e4c0eb3dd870e995d066a35f93a5e67188f2f448eb0e2a31e89c7274b6fa766769b0049a566e7b33ab5e2f542fb4b72ddfb02b163ffd3fb997
+  checksum: 09aec820afc727c64fc896956ebc4483023325e300682e388a3d88333dd3255f54f5ccc2675fdaf5940158fc0c538e60e3e48ee35be4f245aca9222ac6b79cb1
   languageName: node
   linkType: hard
 

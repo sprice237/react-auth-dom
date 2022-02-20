@@ -1,22 +1,27 @@
-import { memo, useEffect, useState, VFC } from 'react';
+import { memo, useCallback, useEffect, useState, VFC } from 'react';
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { useEmailVerificationForm, useSignOut } from '@sprice237/react-auth';
+import { useEmailVerificationForm, useSignOut, ActionCodeSettings } from '@sprice237/react-auth';
 import { ButtonContainer } from '$/components/ui/ButtonContainer';
 import { LoadingOverlay } from '$/components/ui/LoadingSpinner';
 
 export type EmailVerificationFormProps = {
   autosend?: boolean;
+  actionCodeSettings?: ActionCodeSettings | null;
 };
 
 export const EmailVerificationForm: VFC<EmailVerificationFormProps> = memo(
-  ({ autosend = false }) => {
+  ({ autosend = false, actionCodeSettings }) => {
     const signOut = useSignOut();
     const [hasBeenSent, setHasBeenSent] = useState(false);
     const { error, inProgress, isComplete, submit } = useEmailVerificationForm();
+
+    const doSubmit = useCallback(() => {
+      submit(actionCodeSettings);
+    }, [actionCodeSettings]);
 
     useEffect(() => {
       if (isComplete) {
@@ -26,9 +31,9 @@ export const EmailVerificationForm: VFC<EmailVerificationFormProps> = memo(
 
     useEffect(() => {
       if (autosend) {
-        submit();
+        doSubmit();
       }
-    }, [autosend]);
+    }, [autosend, doSubmit]);
 
     return (
       <LoadingOverlay isLoading={inProgress}>
@@ -44,7 +49,7 @@ export const EmailVerificationForm: VFC<EmailVerificationFormProps> = memo(
             </Typography>
           </Box>
           <ButtonContainer>
-            <Button onClick={submit} variant="contained" color="primary">
+            <Button onClick={doSubmit} variant="contained" color="primary">
               {hasBeenSent ? 'Resend verification email' : 'Send verification email'}
             </Button>
             <Button onClick={signOut} component={Link} color="primary">

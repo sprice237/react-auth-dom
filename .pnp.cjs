@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@mui/material", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:5.0.0"],
-            ["@sprice237/react-auth", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:0.4.0"],
+            ["@sprice237/react-auth", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:0.4.3"],
             ["@types/node", "npm:16.7.1"],
             ["@types/react", "npm:17.0.19"],
             ["@types/react-dom", "npm:17.0.9"],
@@ -1823,17 +1823,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@sprice237/react-auth", [
-        ["npm:0.4.0", {
-          "packageLocation": "./.yarn/cache/@sprice237-react-auth-npm-0.4.0-4aa4b7099c-b7bd6f6425.zip/node_modules/@sprice237/react-auth/",
+        ["npm:0.4.3", {
+          "packageLocation": "./.yarn/cache/@sprice237-react-auth-npm-0.4.3-b945e74e93-09aec820af.zip/node_modules/@sprice237/react-auth/",
           "packageDependencies": [
-            ["@sprice237/react-auth", "npm:0.4.0"]
+            ["@sprice237/react-auth", "npm:0.4.3"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:0.4.0", {
-          "packageLocation": "./.yarn/__virtual__/@sprice237-react-auth-virtual-e6fc57b87e/0/cache/@sprice237-react-auth-npm-0.4.0-4aa4b7099c-b7bd6f6425.zip/node_modules/@sprice237/react-auth/",
+        ["virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:0.4.3", {
+          "packageLocation": "./.yarn/__virtual__/@sprice237-react-auth-virtual-d0e840611f/0/cache/@sprice237-react-auth-npm-0.4.3-b945e74e93-09aec820af.zip/node_modules/@sprice237/react-auth/",
           "packageDependencies": [
-            ["@sprice237/react-auth", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:0.4.0"],
+            ["@sprice237/react-auth", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:0.4.3"],
             ["@firebase/app", "npm:0.7.9"],
             ["@firebase/auth", "virtual:682979c0191f52c9fa6f018c6fd0e09376afa85f5b55e18631422fe85f16664dcc911d76ace2fc751c0dd9dae389404ea3018a228d7360d091e9d21c0aa07c61#npm:0.19.3"],
             ["@types/react", "npm:17.0.19"],
@@ -1855,7 +1855,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@sprice237/react-auth-dom", "workspace:."],
             ["@mui/material", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:5.0.0"],
-            ["@sprice237/react-auth", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:0.4.0"],
+            ["@sprice237/react-auth", "virtual:965a0ed07dc18b8243ae37f3e76bca768bc2332643da275f8f585f6b89ac42633e717605b49bc1edfc89d857f57f50bebbd01f837e2eca23a1ca35e6bad09f49#npm:0.4.3"],
             ["@types/node", "npm:16.7.1"],
             ["@types/react", "npm:17.0.19"],
             ["@types/react-dom", "npm:17.0.9"],
